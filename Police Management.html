@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Emergency Contacts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom Styles */
+        .header {
+            background-color: #59a5d8;
+            color: white;
+            padding: 10px 0;
+        }
+        .navbar-nav .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #e3fdfd, #ffffff);
+        }
+        .welcome-section h1 {
+            font-weight: bold;
+        }
+        .about-section {
+            padding: 50px 20px;
+        }
+        .about-section img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .footer {
+            background-color: #121152;
+            color: #ccc;
+            padding: 40px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #00aced;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ccc;
+        }
+        .social a {
+            margin: 0 8px;
+            color: #ccc;
+            font-size: 18px;
+        }
+        .social a:hover {
+            color: #00aced;
+        }
+        .contact-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .contact-list h5 {
+            color: #16C2CC;
+            font-weight: bold;
+        }
+        .contact-item {
+            margin-bottom: 10px;
+        }
+        .contact-item i {
+            color: #16C2CC;
+            margin-right: 8px;
+        }
+    </style>
+    <style>
+        /* Custom styles for text overlay */
+        .text-overlay {
+          position: absolute;
+          color: white;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        .hero {
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          height: 70vh;
+        }
+        .hero-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .stats-section {
+          position: relative;
+          background: url('./Images/Guns.jpg') center/cover no-repeat;
+          height: 50vh;
+          color: white;
+        }
+        .officer-section {
+          background-color: #f8f9fa;
+        }
+      </style>
+</head>
+<body>
+
+<!-- Navbar Section -->
+<nav class="header navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="./homePage2.html">
+            <img src="./Images/Logo-removebg-preview.png" alt="Savior Logo" height="40"> 
+            <span class="fs-3 px-3">SAVIOR</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./hospital.html">Hospital</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Police Management.html">Police Station</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Fire Service.html">Fire Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Emergency Contact.html">E.Contact</a>
+                </li>
+            </ul>
+            
+            <a href="./Login.html" class="btn btn-primary ms-3">Sign in</a>
+            <a href="#" class="btn btn-outline-light ms-2">Sign up</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+
+
+
+<!-- Hero Section -->
+<section class="hero mb-1 shadow" style="background-image: url('./Images/Police\ Department\ .jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container h-100 d-flex align-items-center">
+      <div class="text-overlay">
+        <h1 class="display-4 fw-bold">Police Department Management</h1>
+        <p class="lead">Highlighting efforts to improve community safety.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Stats Section -->
+  <section class="stats-section d-flex align-items-center text-center">
+    <div class="container">
+      <h2 class="display-3 fw-bold">1,969</h2>
+      <p class="lead">Guns Confiscated</p>
+    </div>
+  </section>
+  
+  <!-- Officers Section -->
+  <section class="officer-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">MPD HEROES</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="./Images/messi_862x485.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Officer Image" style="width: 100px; height: 100px;">
+            <div class="card-body">
+              <h5 class="card-title">Ankara Messi</h5>
+              <p class="card-text">Recognized for dedication and bravery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="./Images/Neymar-Jr-Instagram-072024-04-f8f4230653a44aee815b1cba0879281e.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Officer Image" style="width: 100px; height: 100px;">
+            <div class="card-body">
+              <h5 class="card-title">Actor Neyamar</h5>
+              <p class="card-text">Exceptional service to the community.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0">
+            <img src="./Images/cristiano-ronaldo-the-sportsperson-crush-across-the-globe-920x518.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Officer Image" style="width: 100px; height: 100px;">
+            <div class="card-body">
+              <h5 class="card-title">Penalty Ronaldo</h5>
+              <p class="card-text">Dedicated to public safety and justice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+
+
+
+
+
+
+
+
+<div class="bg-light py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Police Department Management</h1>
+  
+      <!-- Area Selection -->
+      <div class="mb-4">
+        <label for="area" class="form-label">Select Area</label>
+        <select id="area" class="form-select" onchange="loadPoliceStations()">
+          <option value="" disabled selected>Select an area</option>
+          <option value="area1">Area 1</option>
+          <option value="area2">Area 2</option>
+          <option value="area3">Area 3</option>
+        </select>
+      </div>
+  
+      <!-- Police Station Selection -->
+      <div id="stationSelection" class="mb-4 d-none">
+        <label for="station" class="form-label">Select Police Station</label>
+        <select id="station" class="form-select" onchange="loadOfficers()">
+          <!-- Stations will be dynamically added here -->
+        </select>
+      </div>
+  
+      <!-- Police Officers -->
+      <div id="officers" class="d-none">
+        <h2 class="h4 mb-3">Officers</h2>
+        <div id="officersList" class="row g-4">
+          <!-- Officers will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script>
+      // Mock Data
+      const data = {
+        area1: {
+          station1: [
+            { name: "Officer A", phone: "1234567890", image: "https://via.placeholder.com/150" },
+            { name: "Officer B", phone: "0987654321", image: "https://via.placeholder.com/150" }
+          ],
+          station2: [
+            { name: "Officer C", phone: "1122334455", image: "https://via.placeholder.com/150" }
+          ]
+        },
+        area2: {
+          station3: [
+            { name: "Officer D", phone: "2233445566", image: "https://via.placeholder.com/150" },
+            { name: "Officer E", phone: "3344556677", image: "https://via.placeholder.com/150" }
+          ],
+          station4: [
+            { name: "Officer F", phone: "4455667788", image: "https://via.placeholder.com/150" }
+          ]
+        },
+        area3: {
+          station5: [
+            { name: "Officer G", phone: "5566778899", image: "https://via.placeholder.com/150" }
+          ]
+        }
+      };
+  
+      function loadPoliceStations() {
+        const area = document.getElementById("area").value;
+        const stations = Object.keys(data[area] || {});
+  
+        const stationSelect = document.getElementById("station");
+        stationSelect.innerHTML = '<option value="" disabled selected>Select a station</option>'; // Clear previous entries
+  
+        stations.forEach(station => {
+          const option = document.createElement("option");
+          option.value = station;
+          option.textContent = station.replace('station', 'Station ');
+          stationSelect.appendChild(option);
+        });
+  
+        document.getElementById("stationSelection").classList.remove("d-none");
+        document.getElementById("officers").classList.add("d-none");
+      }
+  
+      function loadOfficers() {
+        const area = document.getElementById("area").value;
+        const station = document.getElementById("station").value;
+        const officers = data[area]?.[station] || [];
+  
+        const officersList = document.getElementById("officersList");
+        officersList.innerHTML = ""; // Clear previous entries
+  
+        officers.forEach(officer => {
+          const officerCard = document.createElement("div");
+          officerCard.className = "col-md-4";
+  
+          officerCard.innerHTML = `
+            <div class="card h-100 text-center">
+              <img src="${officer.image}" alt="${officer.name}" class="card-img-top rounded-circle mx-auto mt-3" style="width: 100px; height: 100px;">
+              <div class="card-body">
+                <h5 class="card-title">${officer.name}</h5>
+                <p class="card-text">Phone: ${officer.phone}</p>
+                <a href="tel:${officer.phone}" class="btn btn-primary">Call</a>
+              </div>
+            </div>
+          `;
+  
+          officersList.appendChild(officerCard);
+        });
+  
+        document.getElementById("officers").classList.remove("d-none");
+      }
+    </script>
+  </div>
+
+<!-- Footer Section -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h6>Contact Information</h6>
+                <p>Phone: +880 95668656, +880 95653658</p>
+                <p>Email: info@bdpolice.com</p>
+            </div>
+            <div class="col-md-4">
+                <h6>Useful Links</h6>
+                <p>Bangladesh Police, Fire Service</p>
+            </div>
+            <div class="col-md-4 social">
+                <h6>Follow Us</h6>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>© Copyright Savior | Design by <a href="#">Frigid Society</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

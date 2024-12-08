@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+  <div class="flex flex-col md:flex-row">
+    <!-- Sidebar -->
+    <aside class="bg-blue-800 text-white w-full md:w-1/4 min-h-screen p-6">
+      <h1 class="text-2xl font-bold mb-8">Doctor's Dashboard</h1>
+      <nav>
+        <ul>
+          <li class="mb-4">
+            <a href="#" class="flex items-center p-3 rounded-md bg-blue-700 hover:bg-blue-600">
+              <span class="ml-2">Dashboard</span>
+            </a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="flex items-center p-3 rounded-md hover:bg-blue-600">
+              <span class="ml-2">Appointments</span>
+            </a>
+          </li>
+          <li class="mb-4">
+            <a href="#" class="flex items-center p-3 rounded-md hover:bg-blue-600">
+              <span class="ml-2">Patients</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex items-center p-3 rounded-md hover:bg-blue-600">
+              <span class="ml-2">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <header class="mb-6">
+        <h2 class="text-3xl font-semibold text-gray-800">Welcome, Dr. Smith</h2>
+        <p class="text-gray-600">Here’s your schedule for today:</p>
+      </header>
+
+      <!-- Appointment Schedule -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-4">Today's Appointments</h3>
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-gray-200 text-gray-700">
+              <th class="py-2 px-4 text-left">Time</th>
+              <th class="py-2 px-4 text-left">Patient Name</th>
+              <th class="py-2 px-4 text-left">Reason</th>
+              <th class="py-2 px-4 text-left">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">9:00 AM</td>
+              <td class="py-2 px-4">John Doe</td>
+              <td class="py-2 px-4">General Checkup</td>
+              <td class="py-2 px-4">
+                <span class="text-green-500 font-medium">Confirmed</span>
+              </td>
+            </tr>
+            <tr class="border-b hover:bg-gray-100">
+              <td class="py-2 px-4">10:30 AM</td>
+              <td class="py-2 px-4">Jane Smith</td>
+              <td class="py-2 px-4">Consultation</td>
+              <td class="py-2 px-4">
+                <span class="text-yellow-500 font-medium">Pending</span>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-100">
+              <td class="py-2 px-4">1:00 PM</td>
+              <td class="py-2 px-4">Michael Brown</td>
+              <td class="py-2 px-4">Follow-up</td>
+              <td class="py-2 px-4">
+                <span class="text-red-500 font-medium">Cancelled</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

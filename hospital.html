@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savior Hospitals</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<link rel="stylesheethref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ 
+
+</head>
+
+<body class="bg-gray-100 min-h-full">
+
+
+  <!-- Navbar -->
+  <nav class="shadow-md px-4 py-6 md:px-8" style="background-color: #61B6D6;">
+    <div class="mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="./Images/Logo-removebg-preview.png" alt="Logo" class="h-8 w-8 mr-2">
+        <p class="text-xl font-bold text-black" style="color: #03045e;"><a href="./homePage2.html">SAVIOR HOSPITAL SERVICE</a></p>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-3">
+        <a href="./hospital.html" class="text-black hover:text-white text-xl font-medium" style="color: #03045e;">Hospital</a>
+        <a href="./Police after sign up.html" class="text-white hover:text-black text-xl font-medium">Police Station</a>
+        <a href="./Fire Service.html" class="text-white hover:text-black text-xl font-medium">Fire Service</a>
+        <a href="#" class="text-white hover:text-black text-xl font-medium">About Us</a>
+        <a href="./Emergency COntact.html" class="text-white hover:text-black text-xl font-medium">E.Contact</a>
+        
+        <!-- Dropdown for Features -->
+        <div class="relative group">
+          <button class="text-white hover:text-black text-xl font-medium">
+            Our Features
+          </button>
+        </div>
+
+        
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-500 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="md:hidden mt-2 hidden space-y-2">
+      <a href="./hospital.html" class="block text-gray-500 hover:text-orange-500">Hospital</a>
+      <a href="./Police Management.html" class="block text-gray-500 hover:text-orange-500">Police station</a>
+      <a href="./Fire Service.html" class="block text-gray-500 hover:text-orange-500">Fire Service</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">About US</a>
+      <a href="./Emergency COntact.html" class="block text-gray-500 hover:text-orange-500">E.Contact</a>
+      <a href="#" class="block text-gray-500 hover:text-orange-500">Our Features</a>
+    </div>
+  </nav>
+
+
+  <div class="container mx-auto p-4">
+    <!-- Page Header -->
+    <div class="mb-6">
+      <h1 class="text-2xl font-bold text-gray-800">Hospitals and Doctors</h1>
+      <p class="text-gray-600">Browse through the list of hospitals and their associated doctors.</p>
+    </div>
+
+    <!-- Hospital List -->
+    <div class="space-y-6">
+      <!-- Example Hospital -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <!-- Hospital Name -->
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold text-gray-800">City Hospital</h2>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            View Details
+          </button>
+        </div>
+        <!-- Doctors List -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Doctor 1 -->
+          <div class="bg-gray-50 rounded-md p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700">Dr. John Doe</h3>
+            <p class="text-sm text-gray-500">Cardiologist</p>
+            <p class="text-sm text-gray-500">Experience: 10+ years</p>
+            <a href="./dr john de.html"><button class="mt-2 bg-green-500 text-white px-3 py-1 text-sm rounded-md hover:bg-green-600">
+                Book Appointment
+              </button></a>
+          </div>
+          <!-- Doctor 2 -->
+          <div class="bg-gray-50 rounded-md p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700">Dr. Jane Smith</h3>
+            <p class="text-sm text-gray-500">Pediatrician</p>
+            <p class="text-sm text-gray-500">Experience: 8+ years</p>
+            <button class="mt-2 bg-green-500 text-white px-3 py-1 text-sm rounded-md hover:bg-green-600">
+              Book Appointment
+            </button>
+          </div>
+          <!-- Doctor 3 -->
+          <div class="bg-gray-50 rounded-md p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700">Dr. Alan Walker</h3>
+            <p class="text-sm text-gray-500">Orthopedic Surgeon</p>
+            <p class="text-sm text-gray-500">Experience: 15+ years</p>
+            <button class="mt-2 bg-green-500 text-white px-3 py-1 text-sm rounded-md hover:bg-green-600">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Example Hospital -->
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <!-- Hospital Name -->
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold text-gray-800">General Healthcare Center</h2>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+            View Details
+          </button>
+        </div>
+        <!-- Doctors List -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Doctor 1 -->
+          <div class="bg-gray-50 rounded-md p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700">Dr. Emily Clarke</h3>
+            <p class="text-sm text-gray-500">Dermatologist</p>
+            <p class="text-sm text-gray-500">Experience: 12+ years</p>
+            <button class="mt-2 bg-green-500 text-white px-3 py-1 text-sm rounded-md hover:bg-green-600">
+              Book Appointment
+            </button>
+          </div>
+          <!-- Doctor 2 -->
+          <div class="bg-gray-50 rounded-md p-4 shadow">
+            <h3 class="text-lg font-semibold text-gray-700">Dr. Michael Brown</h3>
+            <p class="text-sm text-gray-500">Neurologist</p>
+            <p class="text-sm text-gray-500">Experience: 18+ years</p>
+            <button class="mt-2 bg-green-500 text-white px-3 py-1 text-sm rounded-md hover:bg-green-600">
+              Book Appointment
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<div class="bg-gray-800 text-white">
+
+  <footer class="py-10">
+      <div class="container mx-auto px-4">
+          <!-- Grid Container -->
+          <div class="grid md:grid-cols-3 gap-10 text-center md:text-left">
+              
+              <!-- Contact Information -->
+              <div>
+                  <h3 class="text-lg font-semibold mb-4">Phone</h3>
+                  <p>+880 95668656, +880 95653658</p>
+                  <p>+880 1586858563, +880 1474585555</p>
+                  
+                  <h3 class="text-lg font-semibold mt-6 mb-4">Email</h3>
+                  <p>info@bdpolice.com</p>
+                  <p>info@bdfireservice.com</p>
+                  <p>info@bdbm&dc.com</p>
+              </div>
+              
+              <!-- Useful Links Column 1 -->
+              <div>
+                  <h3 class="text-lg font-semibold mb-4">USEFUL LINKS</h3>
+                  <p>Bangladesh Police, Ministry of Home Affairs</p>
+                  <p>Immigration police, RAB, Ansar VDP, PBI</p>
+                  <p>Desco, BTCL, Fire Service, Bangladesh Betar</p>
+              </div>
+
+              <!-- Useful Links Column 2 -->
+              <div>
+                  <h3 class="text-lg font-semibold mb-4">USEFUL LINKS</h3>
+                  <p>- Fire Code</p>
+                  <p>- Brush</p>
+                  <p>- Central Bureau</p>
+                  <p>- South Bureau</p>
+                  <p>- North Bureau</p>
+              </div>
+          </div>
+
+          <!-- Center for Medical Education Links -->
+          <div class="mt-10 text-center">
+              <h3 class="text-lg font-semibold mb-4">USEFUL LINKS</h3>
+              <p>Central for Fire Service, Bangladesh</p>
+              <p>FAIMER</p>
+              <p>AMEE</p>
+          </div>
+
+          <!-- Copyright -->
+          <div class="mt-10 text-center">
+              <p>© Copyright by <span class="text-cyan-500">Savior</span> | Design by <a href="#" class="text-cyan-500">Frigid Society</a></p>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+
+
+
+</html>

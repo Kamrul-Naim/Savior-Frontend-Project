@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Numbers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  
+
+  <body class="bg-gray-100 min-h-full">
+
+
+    <!-- Navbar -->
+    <nav class="shadow-md px-4 py-6 md:px-8" style="background-color:rgb(55, 55, 247)">
+      <div class="mx-auto flex items-center justify-between">
+        
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="./Images/Logo-removebg-preview.png" alt="Logo" class="h-8 w-8 mr-2">
+          <p class="text-xl font-bold text-black" style="color:white"><a href="./homePage2.html">SAVIOR HOSPITAL SERVICE</a></p>
+        </div>
+  
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex space-x-3">
+          <a href="./hospital.html" class="text-white hover:text-black text-xl font-medium" ">Hospital</a>
+          <a href="./Police Management.html" class="text-white hover:text-black text-xl font-medium">Police Station</a>
+          <a href="./Fire Service.html" class="text-white hover:text-black text-xl font-medium">Fire Service</a>
+          <a href="#" class="text-white hover:text-black text-xl font-medium">About Us</a>
+          <a href="./Emergency COntact.html" class="text-white hover:text-black text-xl font-medium" style="color: #03045e;">E.Contact</a>
+          
+          <!-- Dropdown for Features -->
+          <div class="relative group">
+            <button class="text-white hover:text-black text-xl font-medium">
+              Our Features
+            </button>
+          </div>
+  
+          
+        </div>
+  
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-gray-500 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="md:hidden mt-2 hidden space-y-2">
+        <a href="./hospital.html" class="block text-gray-500 hover:text-orange-500">Hospital</a>
+        <a href="./Police Management.html" class="block text-gray-500 hover:text-orange-500">Police station</a>
+        <a href="./Fire Service.html" class="block text-gray-500 hover:text-orange-500">Fire Service</a>
+        <a href="#" class="block text-gray-500 hover:text-orange-500">About US</a>
+        <a href="./Emergency COntact.html" class="block text-gray-500 hover:text-orange-500">E.Contact</a>
+        <a href="#" class="block text-gray-500 hover:text-orange-500">Our Features</a>
+      </div>
+    </nav>
+  
+  
+
+  <!-- Header -->
+  <header class="bg-white-600 text-black py-4 shadow">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Emergency Contact Numbers</h1>
+      <p class="text-lg">Tap to call in case of an emergency!</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto py-8 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Police -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Police</h2>
+        <p class="mt-2 text-gray-700">For law enforcement emergencies.</p>
+        <a href="tel:911" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 999
+        </a>
+      </div>
+
+      <!-- Fire Department -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Fire Department</h2>
+        <p class="mt-2 text-gray-700">For fire and rescue services.</p>
+        <a href="tel:911" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 999
+        </a>
+      </div>
+
+      <!-- Poison Control -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Poison Control</h2>
+        <p class="mt-2 text-gray-700">For poisoning emergencies.</p>
+        <a href="tel:18002221222" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 1-800-222-1222
+        </a>
+      </div>
+
+      <!-- Suicide Prevention -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Suicide Prevention</h2>
+        <p class="mt-2 text-gray-700">Mental health crisis line.</p>
+        <a href="tel:988" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 988
+        </a>
+      </div>
+
+      <!-- Roadside Assistance -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Roadside Assistance</h2>
+        <p class="mt-2 text-gray-700">For vehicle breakdowns.</p>
+        <a href="tel:18006222666" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 1-800-622-2666
+        </a>
+      </div>
+
+      <!-- Utilities Emergency -->
+      <div class="bg-white shadow-md rounded-lg p-6 text-center">
+        <h2 class="text-xl font-semibold text-blue-600">Utilities Emergency</h2>
+        <p class="mt-2 text-gray-700">Gas, water, or electricity issues.</p>
+        <a href="tel:18001234567" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-green-500">
+          📞 Call 1-800-123-4567
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Emergency Numbers. Stay safe! SAVIOR</p>
+    </div>
+  </footer>
+
+</body>
+</html>
